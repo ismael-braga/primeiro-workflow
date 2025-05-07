@@ -12,5 +12,5 @@ jobs:
 			run: echo "Hello World"
 			- name: "Second Action"
 			run: |
-					echo "You created your first workflow"
-					echo "Congratulations"
+				echo "You created your first workflow"
+				echo "Congratulations"
