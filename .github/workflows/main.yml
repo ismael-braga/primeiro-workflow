@@ -8,9 +8,16 @@ jobs:
     name: "First Job"
     runs-on: ubuntu-latest
     steps:
-      - name: "First Action"
+      - name: "First Action - 1st Job"
         run: echo "Hello World"
-      - name: "Second Action"
+      - name: "Second Action - 1st Job"
         run: |
           echo "You created your first workflow"
           echo "Congratulations"
+  second-job:
+    name: "Installing NodeJS environment"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Verifying NodeJS version"
+        run: node --version
+        
