@@ -21,7 +21,7 @@ jobs:
       - name: "Verifying NodeJS version"
         run: node --version
       - name: "Definition of NodeJS version 22.15.0"
-      - uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: '22.15.0'
       - name: "Verifying NodeJS version again after manual installation"
